@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="main-nav">
+            <ul>
+                <li> <a href="./Inicio.html">Inicio</a></li>
+                <li> <a href="./Ventas.html">Ventas</a></li>
+                <li> <a href="./Productos.html">productos</a></li>
+                <li> <a href="./Administracion.html">Administracion</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="filtroproducto">
+        <section class="boxes">
+            <h1>Filtro</h1>
+            <div class="box">
+                <form action="#">
+                    <i class="fas fa-globe fa-4x"></i>
+                    <input type="text" placeholder="Nombre del producto" >
+                    <input type="text" placeholder="Id_producto" >
+                    <input type="text" placeholder="Palabra clave" >
+                    <input type="submit" value="Buscar">
+                </form>
+
+            </div>
+        </section>
+        
+    </div>
+    <body>
+        <div class="container">
+            <section class="boxes">
+                <div class="box">
+                    <i class="fas fa-globe fa-4x"></i>
+                    <h3>Auricular</h3>
+                    <div class="w3-boxes">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green  ">Ver</button>
+                    </div>
+                    
+                </div>
+                <div class="box ">
+                    <i class="fas fa-cog fa-4x"></i>
+                    <h3>Correa</h3>
+                    <div class="w3-boxes">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green  ">Ver</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-users fa-4x"></i>
+                    <h3>Zapato</h3>
+                    
+
+                        <div class="w3-boxes">
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green  ">Ver</button>
+                            <div id="id01" class="w3-modal" >
+                                <div class="w3-modal-content w3-card-4" style="width: 400px;;">
+                                    <header class="w3-container box-modals"> 
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <h2>Detalle producto</h2>
+                                    </header>
+                                        <div class="tablamodal">
+
+                                            <table border="2">
+                                                <tr>
+                                                    <th scope="row">id_producto</th>
+                                                    <th>Categoria</th>
+                                                    <th>Precio</th>
+                                                </tr>
+                                                        
+                                                <tr>
+                                                    <td>003</td>
+                                                    <td>Calzado</td>
+                                                    <td>40900</td>                 
+                                                </tr> 
+                                            </table>
+                                            
+                                        </div>
+                                    <footer class="w3-container box-modals">
+                                        <input type="submit" value="Editar producto">
+                                        <input type="submit" value="Guardar">
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+            </section>
+        </div>
+        
+
+    </body>
+    
+    
+        
+</body>
+
